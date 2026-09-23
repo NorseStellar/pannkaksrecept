@@ -28,9 +28,17 @@ margin: 40px auto; ger ett avstånd på 40px ovanför och nedanför ett element,
 centrerar horisontellt i containern. padding: ger luft runt elementets innehåll ut till elementets kanter. */
 .container {
    background-color: white;
-   padding: 40px;
-   max-width: 800px;
+   /* padding: 40px; Flyttad till content.*/
+   /*  max-width: 800px; Ändrar för att bilden ska täcka hela den vita ytan. */
+   max-width: 1280px;
    margin: 40px auto;
+   /* margin: 0px auto; */
+}
+
+.content {
+   max-width: 800px;
+   padding: 40px;
+   margin: 0 auto;
 }
 
 /* width: 100% så bilden fyller hela bredden. 
@@ -85,6 +93,10 @@ object-fit: cover gör att bilderna fyller sina områden utan att proportionerna
    .container {
       width: 100%;
       margin: 0;
+      /* padding: 25px; Flyttar till .content */
+   }
+
+   .content {
       padding: 25px;
    }
 
